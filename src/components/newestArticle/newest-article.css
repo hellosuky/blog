@@ -1,0 +1,5 @@
+.latest-article-wrapper .ant-list-item:hover{
+  background: rgba(0,0,0,0.1);
+  cursor:pointer;
+  color:#F596AA;
+}

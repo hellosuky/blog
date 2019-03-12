@@ -1,0 +1,33 @@
+.navbar-pc-wrapper{
+  max-width: 70%;
+  margin: 0 auto;
+  height: 50px;
+  line-height: 50px;
+  max-width: 1200px;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar-pc-ul{
+  list-style: none;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.navbar-pc-ul li{
+  padding:0 10px;
+  text-align: center;
+}
+.navbar-pc-ul .navbar-pc-tag:hover{
+  background: rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+.navbar-pc-wrapper .navbar-logo{
+  flex: 1 1 auto;
+  font-size: 25px;
+  color:#F596AA;
+  margin-left: 170px;
+  cursor: pointer;
+}

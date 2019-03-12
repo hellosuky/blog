@@ -1,0 +1,24 @@
+#admin-wrapper {
+  min-height: 100vh;
+}
+#admin-wrapper .trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color .3s;
+}
+
+#admin-wrapper .trigger:hover {
+  color: #1890ff;
+}
+
+#admin-wrapper .logo {
+  height: 32px;
+  margin: 16px;
+  color: #F19483;
+  font-family: logo;
+  font-size: 25px;
+  line-height: 32px;
+  text-align: center;
+}

@@ -1,0 +1,39 @@
+.hover-menu{
+  position: relative;
+  color: #000;
+}
+
+.hover-menu .ant-avatar{
+  margin-left: 20px;
+}
+
+.hover-menu-dropper{
+  list-style: none;
+  display: block;
+  position: absolute;
+  z-index: 1200;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  width: 125px;
+  transition: transform 400ms ease-in;
+}
+
+.hover-menu-dropper li{
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.hover-menu-dropper li:hover{
+  background: rgba(0,0,0,0.03)
+}
+
+.hover-menu-dropper i{
+  padding-right: 5px;
+}
+
+@media screen and (max-width:769.5px){
+  .hover-menu-dropper{
+    left: -20px;
+    width: 100px;
+  }
+}

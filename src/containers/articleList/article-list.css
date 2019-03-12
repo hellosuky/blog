@@ -1,0 +1,7 @@
+.article-list-wrapper .ant-list-item:hover .ant-list-item-meta-title{
+  color:#F596AA;
+}
+
+.article-list-wrapper .ant-list-item:hover{
+  cursor: pointer;
+}

@@ -1,0 +1,27 @@
+.notfound-wrapper-container{
+  min-height: 980px;
+}
+.notfound-wrapper{
+  font-size: 50px;
+  color: #999;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+}
+
+.notfound-wrapper .notfound-span{
+  display: block;
+  border: 3px solid #999;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media screen and (max-width:768px){
+  .notfound-wrapper-container{
+    min-height: 500px;
+  }
+  .notfound-wrapper{
+    font-size: 30px;
+  }
+}

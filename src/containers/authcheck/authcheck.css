@@ -1,0 +1,32 @@
+.auth-wrapper{
+  position: absolute;
+  bottom: 0;
+  top:0;
+  left:0;
+  right: 0;
+  background-color:rgba(0,0,0,0.3);
+  z-index: 1005;
+}
+
+.auth-container{
+  background: #fff;
+  position: absolute;
+  top:20%;
+  width: 350px;
+  border:1px solid #eee;
+  border-radius: 5px;
+  padding:15px;
+  padding-bottom: 30px;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+.auth-submit{
+  width: 100%;
+}
+
+@media screen and (max-width:767.9px){
+  .auth-container{
+    width: 300px;
+  }
+}

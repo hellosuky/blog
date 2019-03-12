@@ -1,0 +1,43 @@
+.newblog-wrapper .newblog-p{
+  margin: 10px 0;
+}
+.newblog-title{
+  width: 60%;
+}
+
+.markdown-editor{
+  width: 100%;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  display: flex;
+  min-height: 250px;
+}
+
+.markdown-editor  textarea{
+  resize: none;
+  border: none;
+  width: 50%;
+  overflow-y: visible;
+  padding: 5px;
+  border-left: 2px solid #eee;
+}
+
+.markdown-editor .markdown-editor-preview{
+  width: 50%;
+  padding: 5px;
+}
+
+.newblog-btn{
+  text-align: right;
+  right: 20px;
+  margin-top: 20px;
+}
+
+.newblog-btn button{
+  margin: 0 10px;
+}
+
+.markdown-editor .markdown-editor-preview blockquote{
+  border-left: 4px solid #eee;
+  padding-left: 10px;
+}

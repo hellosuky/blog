@@ -1,0 +1,9 @@
+.oauth-wrapper:hover{
+  color: #F596AA;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.oauth-wrapper span{
+  padding-left: 2px;
+}

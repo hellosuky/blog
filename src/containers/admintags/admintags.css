@@ -1,0 +1,25 @@
+#admintags-wrapper{
+  width: 100%;
+}
+
+#admintags-wrapper .admintags-table{
+  display: table;
+  width: 100%;
+}
+
+#admintags-wrapper .admintags-header{
+    display:table-header-group;
+}
+
+#admintags-wrapper .admintags-body{
+  display: table-row-group;
+}
+
+#admintags-wrapper tr{
+  display: table-row;
+}
+
+#admintags-wrapper th{
+  display: table-cell;
+  padding: 16px;
+}

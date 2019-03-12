@@ -1,0 +1,20 @@
+.footer-wrapper{
+  background: #eee;
+  height: 80px;
+  position: relative;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.footer-wrapper span{
+  position: absolute;
+  top: 40px;
+  color: #999;
+  right: 50px;
+}
+
+@media screen and (max-width:1200px){
+  .footer-wrapper span{
+    right: 20px;
+  }
+}

@@ -1,0 +1,12 @@
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 300px;
+  overflow: hidden;
+}
+
+@media screen and (max-width:767.9px) {
+  .ant-carousel .slick-slide{
+    margin-top: 92px;
+    height: 200px;
+  }
+}

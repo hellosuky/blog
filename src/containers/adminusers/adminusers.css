@@ -1,0 +1,28 @@
+#AdminUsers-wrapper{
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+#AdminUsers-wrapper .AdminUsers-header{
+  display: table-header-group;
+}
+
+#AdminUsers-wrapper .AdminUsers-body{
+  display: table-row-group;
+}
+
+#AdminUsers-wrapper tr{
+  display: table-row;
+  border-bottom: 1px solid #eee;
+}
+
+#AdminUsers-wrapper th{
+  display: table-cell;
+  padding: 16px;
+}
+
+#AdminUsers-wrapper th .ant-btn-primary{
+  margin: 0 15px;
+}

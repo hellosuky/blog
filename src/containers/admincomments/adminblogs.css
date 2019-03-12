@@ -1,0 +1,41 @@
+#adminblogs-wrapper table{
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+#adminblogs-wrapper .adminblogs-header{
+  display: table-header-group;
+}
+
+#adminblogs-wrapper .adminblogs-body{
+  display: table-row-group;
+}
+
+#adminblogs-wrapper .adminblogs-subtitle{
+  padding-right: 15px;
+}
+
+#adminblogs-wrapper tr{
+  display: table-row;
+  border-bottom: 1px solid #eee;
+}
+
+#adminblogs-wrapper th{
+  display: table-cell;
+  padding: 16px;
+}
+
+#adminblogs-wrapper th .ant-btn-primary{
+  margin: 0 15px;
+}
+
+#adminblogs-wrapper .adminblogs-nodata{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  font-size: 25px;
+}
