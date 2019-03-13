@@ -1,68 +1,67 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### React + Express + Mongodb + antd 全栈博客
 
-## Available Scripts
+###### 所用技术栈：
+环境搭建：<br/>
++ Express
++ create-react-app
++ @babel/plugin-proposal-decorators(使用装饰器)
++ customize-cra(装饰器辅助组件)
++ antd
++ http-proxy-middleware(支持create-react-app跨域)
++ babel-plugin-import(antd辅助插件)
++ nodemon
 
-In the project directory, you can run:
+搭建过程(主要组件)：
++ axios
++ cookie-parser
++ express-session
++ mongoose
++ multer
++ react
++ react-dom
++ redux
++ redux-saga
++ remark(markdown处理)
++ socket.io
++ react-responsive(响应式)
 
-### `npm start`
+##### 主要效果图
+登录过程：
+![登录](./docs/登录.gif)
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+搜索：
+![搜索](./docs/搜索.gif)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+具体页面：
+![具体页面](./docs/具体页面.gif)
 
-### `npm test`
+响应式(管理页面没有响应)：<br/>
+![响应式](./docs/响应式.gif)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+编辑便签：
+![编辑便签](./docs/编辑便签.gif)
 
-### `npm run build`
+编辑博客：
+![编辑博客](./docs/编辑博客.gif)
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+新增博客：
+![新增博客](./docs/新增博客.gif)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+编辑用户：
+![编辑用户](./docs/编辑用户.gif)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+配置：
+1. 复制
+> git clone https://github.com/hellosuky/blog.git
 
-### `npm run eject`
+2. 依赖包安装
+> npm install
+3. 运行
+> npm run start
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<br/>
+http://localhost:3000 为前端,http://localhost:3000/admin 为管理
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+>npm run dev
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+http://localhost:9090 为后端接口
