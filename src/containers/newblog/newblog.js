@@ -80,7 +80,7 @@ class NewBlog extends Component{
       }
 
       setTimeout(() =>
-      this.setState({title:'',selectedTags:[],content:'',cover:'',clear:true}),1500)
+      this.setState({title:'',selectedTags:[],content:'',cover:'',clear:true}),2500)
     }
   }
   handlePublish(){
@@ -93,7 +93,7 @@ class NewBlog extends Component{
         this.props.editBlog(this.props.blog.currentBlog._id,title,content,selectedTags,cover,isPublish)
       }
       setTimeout(() =>
-      this.setState({title:'',selectedTags:[],content:'',cover:'',clear:true}),1500)
+      this.setState({title:'',selectedTags:[],content:'',cover:'',clear:true}),2500)
     }
   }
   clearFinish(){

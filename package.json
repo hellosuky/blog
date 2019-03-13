@@ -7,6 +7,7 @@
     "antd": "^3.13.5",
     "axios": "^0.18.0",
     "babel-plugin-import": "^1.11.0",
+    "bluebird": "^3.5.3",
     "body-parser": "^1.18.3",
     "browser-cookies": "^1.2.0",
     "compression": "^1.7.3",

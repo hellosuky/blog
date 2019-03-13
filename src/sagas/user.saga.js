@@ -138,7 +138,7 @@ function* deleteUserFlow(){
     let req = yield take(UserActions.DELETE_USER)
     let res = yield call(deleteUser,req.id)
     if(res.data && res.data.code === 0 ){
-        yield put({type:UserActions.DELETE_USER_SUCCESS})
+        yield put({type:UserActions.DELETE_USER_SUCCESS,data:res.data.data})
         yield put({type:GlobalActions.MSG_RETURN,msgType:0,msgContent:res.data.msg})
     }else{
       yield put({type:GlobalActions.MSG_RETURN,msgType:1,msgContent:res.data.msg})

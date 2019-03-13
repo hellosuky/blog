@@ -80,7 +80,7 @@ Router.get('/detail',function(req,res){
 })
 
 Router.get('/latest',function(req,res){
-  Blog.find({}).sort('created_time').select('title')
+  Blog.find({"isPublish":true}).sort('created_time').select('title')
   .limit(5).exec(function(err,results){
     res.json({code:0,data:results,msg:'搜索返回成功'})
   })
@@ -154,17 +154,23 @@ Router.post('/addcomments',function(req,res){
       res.json({code:1,msg:'服务端出错'})
       return
     }
-    Blog.findOne({'_id':blog_id})
-    .populate({path:'comments.user_id',select:'name avatar -_id'})
-    .select('title created_time view_count comments cover likes collects description')
-    .exec(function(err,doc){
-      if(err){
+    User.updateOne({'_id':req.session.user_id},{$push:{comments:{'_id':blog_id}}},function(err,doc){
+      if(e){
         res.json({code:1,msg:'服务端出错'})
         return
       }
-      res.json({code:0,data:doc,msg:"添加评论成功"})
+      Blog.findOne({'_id':blog_id})
+      .populate({path:'comments.user_id',select:'name avatar -_id'})
+      .select('title created_time view_count comments cover likes collects description')
+      .exec(function(err,doc){
+        if(err){
+          res.json({code:1,msg:'服务端出错'})
+          return
+        }
+        res.json({code:0,data:doc,msg:"添加评论成功"})
+      })
     })
-  })
+})
 })
 
 Router.post('/deletecomments',function(req,res){

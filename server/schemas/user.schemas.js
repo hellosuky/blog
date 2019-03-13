@@ -6,6 +6,7 @@ const UserSchema =  new Schema({
   pwd:{type:String},
   likes:[{type:mongoose.Schema.ObjectId,ref:'Blog'}],
   collects:[{type:mongoose.Schema.ObjectId,ref:'Blog'}],
+  comments:[{type:mongoose.Schema.ObjectId,ref:'Blog'}],
   type:{type:String,default:'client'},
   avatar:{type:String},
   description:{type:String},
